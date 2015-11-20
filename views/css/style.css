@@ -33,6 +33,10 @@ form {
   position: fixed;
   width: 256px;
   z-index: -1;
+  /* Create a new layer. This works in Chrome, Opera and Firefox */
+  will-change: transform;
+  /* Create a new layer. This works in Safari */
+  transform: translateZ(0);
 }
 
 .randomPizzaContainer {
